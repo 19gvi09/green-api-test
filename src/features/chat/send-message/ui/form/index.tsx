@@ -49,7 +49,6 @@ export const ChatSendMessageForm: FC<ChatSendMessageFormProps> = ({
         priority: "high",
         title: "Не удалось отправить сообщение",
         type: "error",
-        
       });
     }
   };
