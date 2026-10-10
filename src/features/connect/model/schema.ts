@@ -3,8 +3,7 @@ import z from "zod";
 import { createSchema } from "@/shared/utils";
 
 export const schema = createSchema<Instance>()({
-  idInstance: z
-    .number({ error: "Введите ID инстанса!" }),
+  idInstance: z.number({ error: "Введите ID инстанса!" }),
   apiTokenInstance: z.string().min(1, "Введите API-токен инстанса!"),
 });
 

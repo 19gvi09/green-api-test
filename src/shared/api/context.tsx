@@ -6,7 +6,7 @@ import {
 } from "@green-api/whatsapp-api-client-js-v2";
 import {
   createContext,
-  FC,
+  type FC,
   type PropsWithChildren,
   useContext,
   useState,

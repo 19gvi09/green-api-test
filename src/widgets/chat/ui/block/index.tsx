@@ -55,8 +55,8 @@ export const ChatWidget = () => {
   };
 
   const changeClient = () => {
-    setActiveChatId(null)
-    setMessages([])
+    setActiveChatId(null);
+    setMessages([]);
     clearClient();
     router.push("/");
   };

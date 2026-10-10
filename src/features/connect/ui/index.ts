@@ -1,1 +1,1 @@
-export { ConnectForm } from "./form"
+export { ConnectForm } from "./form";

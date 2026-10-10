@@ -1,1 +1,1 @@
-export {ChatWidget} from "./block";
+export { ChatWidget } from "./block";

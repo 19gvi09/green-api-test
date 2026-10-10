@@ -2,6 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SendHorizontal } from "lucide-react";
+import type { FC } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { useApiContext } from "@/shared/api";
 import { Button } from "@/shared/shadcn/components/ui/button";
@@ -9,7 +10,6 @@ import { Field } from "@/shared/shadcn/components/ui/field";
 import { Textarea } from "@/shared/shadcn/components/ui/textarea";
 import { toast } from "@/shared/shadcn/components/ui/toast";
 import { type FormValues, schema } from "../../model";
-import { FC } from "react";
 
 interface ChatSendMessageFormProps {
   chatId: string;

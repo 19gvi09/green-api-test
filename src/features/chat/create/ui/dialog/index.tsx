@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Plus } from "lucide-react";
-import { FC, useState } from "react";
+import { type FC, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { Button } from "@/shared/shadcn/components/ui/button";
 import {
@@ -39,7 +39,7 @@ export const CreateChatDialog: FC<CreateChatDialogProps> = ({ onSuccess }) => {
 
   const submit = (values: FormValues) => {
     const chatId = toChatId(values.phoneNumber);
-    onSuccess(chatId)
+    onSuccess(chatId);
     handleOpenChange(false);
   };
 
