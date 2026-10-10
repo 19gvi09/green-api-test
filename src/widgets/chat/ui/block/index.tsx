@@ -129,7 +129,7 @@ export const ChatWidget = () => {
           )}
 
           <footer className="mt-auto border-t border-max-border px-5 py-4">
-            <Button onClick={changeClient} type="button" variant="link">
+            <Button onClick={() => changeClient()} type="button" variant="link">
               Сменить аккаунт
             </Button>
           </footer>
@@ -219,7 +219,7 @@ export const ChatWidget = () => {
               <footer className="border-t border-max-border bg-max-surface p-4">
                 <ChatSendMessageForm
                   chatId={activeChatId}
-                  onSent={addSentMessage}
+                  onSent={(message) => addSentMessage(message)}
                 />
               </footer>
             </>
